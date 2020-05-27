@@ -18,7 +18,6 @@ export class AppComponent {
 
   ngOnInit(): void {
     // setInterval(_=> this.count++,500)
-
   }
 
 

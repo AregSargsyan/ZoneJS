@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef, NgZone, ChangeDetectorRef } f
 
 @Component({
   selector: 'app-animated-div',
-  templateUrl: './animated-div.component.html',
+  template: `<div #div></div>`,
   styleUrls: ['./animated-div.component.scss']
 })
 export class AnimatedDivComponent implements OnInit {
@@ -22,8 +22,4 @@ export class AnimatedDivComponent implements OnInit {
   private changeColor() {
     setInterval(_ => this.div.nativeElement.style.background = this.setRandomColor(), 50)
   }
-
-
-
-
 }
